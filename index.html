@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to app...</p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      const error = params.get("error");
+
+      if (code) {
+        // Redirect to your app with code
+        window.location.href = `kubby://auth?code=${code}`;
+      } else if (error) {
+        window.location.href = `kubby://auth?error=${error}`;
+      } else {
+        document.body.innerHTML = "<p>No code or error received.</p>";
+      }
+    </script>
+  </body>
+</html>
