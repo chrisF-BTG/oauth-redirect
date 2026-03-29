@@ -1,0 +1,24 @@
+{
+  "name": "web-capture-api",
+  "version": "1.0.0",
+  "description": "Puppeteer API for full-page screenshot capture",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "puppeteer",
+    "screenshot",
+    "web-capture",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "puppeteer": "^22.0.0"
+  }
+}
